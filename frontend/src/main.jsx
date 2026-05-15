@@ -6,10 +6,16 @@ import App from "./App";
 
 import "./styles/globals.css";
 
+import {
+  BookingProvider,
+} from "./context/BookingContext";
+
 ReactDOM.createRoot(document.getElementById("root")).render(
   <React.StrictMode>
     <BrowserRouter>
-      <App />
+      <BookingProvider>
+        <App />
+      </BookingProvider>
     </BrowserRouter>
   </React.StrictMode>
 );

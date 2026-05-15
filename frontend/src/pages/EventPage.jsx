@@ -7,6 +7,10 @@ import Speakers from "../components/event/Speakers";
 import VenueMap from "../components/event/VenueMap";
 import EventHighlights from "../components/event/EventHighlights";
 
+import TicketPricing from "../components/event/TicketPricing";
+import EventGallery from "../components/event/EventGallery";
+import StickyBookingCTA from "../components/event/StickyBookingCTA";
+
 const EventPage = () => {
   return (
     <MainLayout>
@@ -21,7 +25,13 @@ const EventPage = () => {
 
       <Speakers />
 
+      <TicketPricing />
+
+      <EventGallery />
+
       <VenueMap />
+
+      <StickyBookingCTA />
 
     </MainLayout>
   );

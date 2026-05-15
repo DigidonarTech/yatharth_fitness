@@ -8,6 +8,7 @@ import {
 
 import Container from "../common/Container";
 import Button from "../common/Button";
+import { Link } from "react-router-dom";
 
 const EventHero = () => {
   return (
@@ -128,10 +129,11 @@ const EventHero = () => {
             {/* BUTTONS */}
 
             <div className="flex flex-wrap gap-5">
-
+            <Link to="/booking">
               <Button>
                 Book Your Seat
               </Button>
+              </Link>
 
               <button
                 className="
